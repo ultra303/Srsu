@@ -1,4 +1,4 @@
-A friendly and Automated trusted phishing tool with more templates.
+A friendly and Automated trusted srsu tool with more templates.
 
 ##
 
@@ -11,12 +11,12 @@ This toolkit contains materials that can be <b>potentially damaging or dangerous
 
 This Tool is made for <b>EDUCATIONAL PURPOSES</b> only. Do not attempt to violate the law with anything contained here. <b>If this is your intention, then author will not be responsible of your actions</b>!
 
-It only demonstrates <b>"how phishing works".</b> <b>You shall not misuse the information to gain unauthorized access to someones social media</b>. However you may try out this at your own risk.</i>
+It only demonstrates <b>"how srsu works".</b> <b>You shall not misuse the information to gain unauthorized access to someones social media</b>. However you may try out this at your own risk.</i>
 
 ##
 
 ### Installation (Termux)
-You can easily install **Phishing** in Termux by using the command below
+You can easily install **Srsu** in Termux by using the command below
 ```
 termux-setup-storage
 apt update
@@ -30,7 +30,7 @@ Just Clone this repository
   ```
 git clone --depth=1 https://github.com/ultra303/srsu.git
 ```
-Just continue to run **Phishing**
+Just continue to run **Srsu**
 ```
 cd srsu
 chmod +x srsu.sh
@@ -53,13 +53,13 @@ bash srsu.sh
 <details>
   <summary><h3>Dependencies</h3></summary>
 
-<b>Phishing</b> requires following programs to run properly - 
+<b>Srsu</b> requires following programs to run properly - 
 - `git`
 - `curl`
 - `php`
 - `wget`
 
-> All the dependencies will be installed automatically when you run **Phishing** for the first time.
+> All the dependencies will be installed automatically when you run **Srsu** for the first time.
 </details>
 
 <details>
@@ -80,6 +80,7 @@ bash srsu.sh
 
 <h3 align="center"><i>☆ Workflow ☆</i></h3>
 <p align="center">
+<h4>Working...</h4>
 <img src=".github/misc/demo.gif"/>
 </p>
 
