@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Make Deb Package for Phishing (^.^)
+# Make Deb Package for Srsu (^.^)
 _PACKAGE=srsu
 _VERSION=1.0
 _ARCH="all"
