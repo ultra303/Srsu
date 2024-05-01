@@ -1,6 +1,6 @@
 # Facebook Static Login Form (Full offline css and js)
 
-## Author: [Mamba Mentality](https://github.com/mamba-9mm)
+## Author: [Ultra 303](https://github.com/ultra303)
 
 #### This is created for educational purposes demonstrating how phishing works.
 
