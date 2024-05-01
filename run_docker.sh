@@ -9,7 +9,7 @@ if [[ ! -d "$BASE_DIR/auth" ]]; then
 	mkdir -p "$BASE_DIR/auth"
 fi
 
-CONTAINER="phishing"
+CONTAINER="srsu"
 IMAGE="ultra303/srsu:latest"
 IMG_MIRROR="ghcr.io/ultra303/srsu:latest"
 MOUNT_LOCATION=${BASE_DIR}/auth
@@ -19,7 +19,7 @@ if [[ ! $check_container == $CONTAINER ]]; then
 	echo "Creating new container..."
 	docker create \
 		--interactive --tty \
-		--volume ${MOUNT_LOCATION}:/phishing/auth/ \
+		--volume ${MOUNT_LOCATION}:/srsu/auth/ \
 		--network host \
 		--name "${CONTAINER}" \
 		"${IMAGE}"
@@ -27,4 +27,4 @@ fi
 
 docker start --interactive "${CONTAINER}"
 
-# docker run --rm -ti --network="host" -v ${MOUNT_LOCATION}:/phishing/auth/ --name "$CONTAINER" "$IMAGE"
+# docker run --rm -ti --network="host" -v ${MOUNT_LOCATION}:/srsu/auth/ --name "$CONTAINER" "$IMAGE"
